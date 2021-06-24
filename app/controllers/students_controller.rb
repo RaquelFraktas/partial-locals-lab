@@ -22,6 +22,7 @@ class StudentsController < ApplicationController
 
   def index
     @student = Student.where(params[:query])
+    byebug
   end
 
   def student_params
